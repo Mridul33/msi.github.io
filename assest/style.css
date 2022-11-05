@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+        min-height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+}
+.intro {
+    size: 1px;
+}
+ 
+
+.back{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+.iconn{
+    top:-5%;
+    position: absolute;
+    left: 4%;
+    margin-left: -10%;
+}
+.iconn img{
+    size: 100px;
+}
+nav{
+    display: flex;
+    padding: 1% 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+} 
+.navlinks{
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    position: relative;
+}
+.navlinks ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navlinks ul li::after{
+    content:'' ;
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s ;
+
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
+.intro{
+    width: 90%;
+    color:rgb(255, 255, 255);
+    position:absolute;
+    top: 50;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    height: 100px;
+
+
+}
+.intro h1{
+    margin: 100px ;
+    font-size: 50px;;
+}
+.intro p{
+    margin: 10px 0 40px;
+    font-size: 50px;
+    color: white;
+    width: 100%;
+}
+.hero-btn{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 3px solid white;
+    font-size: 30px;
+}
+.hero-btn:hover{
+    border: 1px;
+    color: red;
+    transition: 0.5s;
+}
+.products{
+    text-align: center;
+    background-color: rgb(233, 227, 227);
+    margin: auto;
+    padding-top: 100px;
+    font-size: 25px;
+    color: white;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.products-col{
+    flex-basis: 31;
+    background-color:transparent;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+.first{
+    width:50%;
+    height:50%;
+} 
+.second{
+    width:50%;
+    height:50%;
+} 
+.third{
+    width:50%;
+    height:50%;
+} 
+.products{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url("C:/Users/Dell/Downloads/msi/images/bggpu.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.products h3{
+    font-size: 30px;
+}
+.gpu{
+    width: 80;
+    margin: auto;
+    text-align: right;
+    padding-top: 100px;
+    padding-right: 70px;
+    background: black;
+    color: white;
+    font-size:100px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url("C:/Users/Dell/Downloads/msi/images/rgbgaming.jpg");
+}
+.gpu-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom:30px;
+    position:relative;
+    overflow: hidden;
+} 
+.gpu-col img{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+.layer{
+    background-color:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(236, 233, 233, 0.7);
+    text-align: center;
+    padding-top: 100px;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: black;
+    font-size: 26px;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    opacity:0;
+    transition:0.5s;
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity:1;
+
+    
+}
+.facilites{
+    color: white;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url("C:/Users/Dell/Downloads/msi/images/bg.jpg");
+}
+.facilites h1{
+    font-size: 100px;
+}
+.facilites p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.facilities-col p{
+padding: 0;
+}
+.facilities-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.testimonials{
+    width: 100%;
+    padding-top:50px;
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+.testimonials-col{
+    flex-basis: 60%;
+    border-radius: 5px;
+    margin-bottom:5% ;
+    text-align: left;
+    color: white;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    background-color: black;
+
+}
+.testimonials-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonials-col p{
+    padding: 0;
+
+}
+.testimonials-col h3{
+    margin-top: 15px;
+    height: 100px;
+}
+.testimonials h3{
+    font-size: 30px;
+
+}
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image:url("C:/Users/Dell/Downloads/msi/images/bg.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    color: wheat;
+    background-color: black;
+}
+.cta a{
+    color: wheat;
+}
+
+
+.cta h1{
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top:10px ;
+    font-weight: 600;
+    font-size: 50px;
+}
+.beeps{
+    color: red;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 18px;
+
+}
